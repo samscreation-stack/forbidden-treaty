@@ -1,0 +1,32 @@
+/* Dark & formal overlay */
+:root{--bg:#050506;--red:#a8283c;--red-light:#d6566a;--gold:#b89a62;--gold-soft:#8a7348;--paper:#0f0c0c}
+html,body{background:#050506}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.06;background-image:repeating-radial-gradient(circle at 30% 20%,#fff 0,#fff 1px,transparent 1px,transparent 3px)}
+.hero{background:radial-gradient(ellipse at 50% 40%,#3a0c1666,transparent 46%),linear-gradient(180deg,#050506,#0b0508)}
+.eyebrow,.chapter-label,.wordmark-mark,.scene-index b{color:var(--gold)}
+.hero-rule span{background:var(--gold-soft)}
+.hero h1 em,.scene h2 em{color:var(--red-light);text-shadow:0 0 40px #a8283c55}
+.button{border-radius:0;letter-spacing:.04em}.button-primary{background:linear-gradient(180deg,#b02a40,#7d1b2b);border-color:#c04a5c}
+.quote-card{border-color:#b89a6244;background:linear-gradient(135deg,#140c0f,#08080a 78%)}
+.quote-card:before{border-color:#b89a6226}
+.clause-option.is-selected{background:linear-gradient(90deg,#5a14262e,transparent 78%);border-bottom-color:#b89a6255}
+.clause-option.is-selected .clause-check{background:var(--red);border-color:var(--gold)}
+.paper-stage{background:#08070a}
+
+/* The contract paper: black parchment, gold & crimson */
+.contract-paper{background-color:#0f0c0c;background-image:radial-gradient(ellipse at 50% 0,#2a0e1440,transparent 55%),repeating-linear-gradient(0deg,#ffffff05 0,#ffffff05 1px,transparent 1px,transparent 5px);color:#e6d9c6;box-shadow:0 28px 95px #000,0 0 0 1px #b89a6240}
+.paper-border{border-color:#b89a62cc}.paper-border:after{border-color:#b89a6255}
+.document-meta,.document-heading>p,.document-heading small,.party-details small,.signature-block small,.document-bottom,.paper-note{color:#9c8a68}
+.document-meta{border-bottom-color:#b89a6266}.document-bottom{border-top-color:#b89a6244}
+.document-heading h2{color:#f0e4d0;letter-spacing:.02em}
+.subject-quote{color:#d6566a;border-color:#b89a6288}
+.legal-intro,.fixed-terms p,.selected-terms p,.closing-terms p,.execution-line{color:#d9ccb8}
+.legal-intro b,.fixed-terms b,.selected-terms b,.closing-terms b{color:#e9cf9b}
+.fixed-terms u{text-decoration-color:var(--red-light);text-underline-offset:3px}
+.party-details{background:#1a1013;border-color:#b89a6244}.party-details span,.selected-terms-heading{color:#d6566a}
+.party-details strong,.signature-block strong,.terms-intro{color:#efe3cf}
+.selected-terms-heading{border-bottom-color:#b89a6244}.closing-terms{border-top-color:#b89a6233}
+.private-note{color:#a8946f}
+.signature-rule{border-top-color:#b89a62}.signature-image-slot img{mix-blend-mode:normal}.signature-empty{color:#7d6d52}
+.wax-seal{background:radial-gradient(circle at 32% 25%,#e0606f,#a8283c 32%,#5e1020 70%,#36080f)}
+@media print{body,.paper-stage{background:#0f0c0c!important}}
